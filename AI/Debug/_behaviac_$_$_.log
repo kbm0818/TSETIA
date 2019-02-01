@@ -1,0 +1,22 @@
+[behaviac][00000][thread 8284]CREATED ON 2019-02-01
+
+[behaviac][00000][thread 8284][15:04:11][INFO]behaviac: ConnectorInterface::Init Enter
+[behaviac][00001][thread 8284][15:04:11][INFO]behaviac: listing at port 60636
+[behaviac][00002][thread 8284][15:04:11][INFO]behaviac: ConnectorInterface::Init Connected
+[behaviac][00003][thread 12400][15:04:11][INFO]behaviac: Socket Thread Starting
+[behaviac][00004][thread 12400][15:04:11][INFO]behaviac: Listening at port 60636...
+[behaviac][00005][thread 8284][15:04:12][INFO]behaviac: ConnectorInterface::Init successful
+[behaviac][00006][thread 8284][15:04:12][INFO]behaviac: SetupConnection successful
+[behaviac][00007][thread 8284][15:04:12][INFO]Version: behaviac_vs2015_3.6.39_32_debug_NRELEASE
+[behaviac][00008][thread 8284][15:04:12][INFO]Config::IsDesktopPlatform true
+[behaviac][00009][thread 8284][15:04:12][INFO]Config::IsProfiling false
+[behaviac][00010][thread 8284][15:04:12][INFO]Config::IsLogging false
+[behaviac][00011][thread 8284][15:04:12][INFO]Config::IsLoggingFlush true
+[behaviac][00012][thread 8284][15:04:12][INFO]Config::IsSocketing true
+[behaviac][00013][thread 8284][15:04:12][INFO]Config::IsSocketBlocking false
+[behaviac][00014][thread 8284][15:04:12][INFO]Config::IsHotReload true
+[behaviac][00015][thread 8284][15:04:12][INFO]Config::SocketPort 60636
+[behaviac][00016][thread 8284][15:04:12][INFO]'WorkspaceExportPath' is '../tutorials/tutorial_1/cpp/exported/'
+[behaviac][00017][thread 8284][15:04:12][ERROR]Invalid file '../tutorials/tutorial_1/cpp/exported/FirstBT.xml' (error code 3)
+[behaviac][00018][thread 8284][15:04:12][ERROR]'../tutorials/tutorial_1/cpp/exported/FirstBT.xml' doesn't exist!, Please check the file name or override Workspace and its GetFilePath()
+[behaviac][00019][thread 8284][15:04:12][ERROR]BEHAVIAC_ASSERT failed!

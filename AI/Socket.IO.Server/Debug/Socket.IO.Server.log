@@ -1,0 +1,16 @@
+﻿  SioEvent.cpp
+  Socket.IO.Server.cpp
+  SocketIOPacket.cpp
+e:\game\ai\socket.io.server\socketiopacket.cpp(26): error C2065: 'int_message': undeclared identifier
+e:\game\ai\socket.io.server\socketiopacket.cpp(26): error C2059: syntax error: 'const'
+e:\game\ai\socket.io.server\socketiopacket.cpp(27): error C2143: syntax error: missing ';' before '{'
+e:\game\ai\socket.io.server\socketiopacket.cpp(27): error C2447: '{': missing function header (old-style formal list?)
+e:\game\ai\socket.io.server\socketiopacket.cpp(87): error C2039: 'flag_integer': is not a member of 'sio::message'
+  e:\game\ai\socket.io.server\socketiomessage.h(13): note: see declaration of 'sio::message'
+e:\game\ai\socket.io.server\socketiopacket.cpp(87): error C2065: 'flag_integer': undeclared identifier
+e:\game\ai\socket.io.server\socketiopacket.cpp(89): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+e:\game\ai\socket.io.server\socketiopacket.cpp(89): error C2146: syntax error: missing '>' before identifier 'int_message'
+e:\game\ai\socket.io.server\socketiopacket.cpp(87): error C2051: case expression not constant
+e:\game\ai\socket.io.server\socketiopacket.cpp(136): error C2653: 'int_message': is not a class or namespace name
+e:\game\ai\socket.io.server\socketiopacket.cpp(136): error C3861: 'create': identifier not found
+  Generating Code...

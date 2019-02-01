@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CustomDataType">
+      <UniqueIdentifier>{8723c60b-0f15-4e80-be31-e1f89e74d422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generator">
+      <UniqueIdentifier>{334aa33a-12ba-4b9e-9010-59f2d9a9a15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navmesh">
+      <UniqueIdentifier>{28a0bf85-5073-4909-93a4-5f0c74444f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navmesh\DebugUtils">
+      <UniqueIdentifier>{404334f8-a8df-4d94-a632-f0c46361f46d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navmesh\Detour">
+      <UniqueIdentifier>{011aa6ae-5d11-4663-8fec-e3698554a4e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navmesh\DetourCrowd">
+      <UniqueIdentifier>{8f8f7053-5b9e-4420-9f33-17c52ef93cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navmesh\DetourTileCache">
+      <UniqueIdentifier>{e904510a-69d5-470c-8f49-72b0bd2466b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navmesh\Recast">
+      <UniqueIdentifier>{385d2a18-426c-4db9-aa7b-7fbb7e80a2a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomDataType\FNavMeshPath.h">
+      <Filter>CustomDataType</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomDataType\FVector.h">
+      <Filter>CustomDataType</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\DtMeshLoader.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\PathGenerator.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DebugUtils\DetourDebugDraw.h">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DebugUtils\RecastDebugDraw.h">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DebugUtils\RecastDump.h">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DebugUtils\DebugDraw.h">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourCommon.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourNavMesh.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourNavMeshBuilder.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourNavMeshQuery.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourNode.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourStatus.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourAlloc.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Detour\DetourAssert.h">
+      <Filter>Navmesh\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourPathCorridor.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourPathQueue.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourProximityGrid.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourSharedBoundary.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourCrowd.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourLocalBoundary.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourCrowd\DetourObstacleAvoidance.h">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourTileCache\DetourTileCacheBuilder.h">
+      <Filter>Navmesh\DetourTileCache</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\DetourTileCache\DetourTileCache.h">
+      <Filter>Navmesh\DetourTileCache</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Recast\Recast.h">
+      <Filter>Navmesh\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Recast\RecastAlloc.h">
+      <Filter>Navmesh\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="Navmesh\Recast\RecastAssert.h">
+      <Filter>Navmesh\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomDataType\FVector.cpp">
+      <Filter>CustomDataType</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomDataType\FNavMeshPath.cpp">
+      <Filter>CustomDataType</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\DtMeshLoader.cpp">
+      <Filter>Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\PathGenerator.cpp">
+      <Filter>Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DebugUtils\RecastDebugDraw.cpp">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DebugUtils\RecastDump.cpp">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DebugUtils\DebugDraw.cpp">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DebugUtils\DetourDebugDraw.cpp">
+      <Filter>Navmesh\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Detour\DetourNavMesh.cpp">
+      <Filter>Navmesh\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Detour\DetourNavMeshBuilder.cpp">
+      <Filter>Navmesh\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Detour\DetourNavMeshQuery.cpp">
+      <Filter>Navmesh\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Detour\DetourNode.cpp">
+      <Filter>Navmesh\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Detour\DetourAlloc.cpp">
+      <Filter>Navmesh\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Detour\DetourCommon.cpp">
+      <Filter>Navmesh\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourPathCorridor.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourPathQueue.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourProximityGrid.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourSharedBoundary.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourCrowd.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourLocalBoundary.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourCrowd\DetourObstacleAvoidance.cpp">
+      <Filter>Navmesh\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourTileCache\DetourTileCacheBuilder.cpp">
+      <Filter>Navmesh\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourTileCache\DetourTileCacheDetail.cpp">
+      <Filter>Navmesh\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourTileCache\DetourTileCacheRegion.cpp">
+      <Filter>Navmesh\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\DetourTileCache\DetourTileCache.cpp">
+      <Filter>Navmesh\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastContour.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastFilter.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastLayers.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastMesh.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastMeshDetail.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastRasterization.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastRegion.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\Recast.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastAlloc.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navmesh\Recast\RecastArea.cpp">
+      <Filter>Navmesh\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Behaviac\agent\agent.h" />
+    <ClInclude Include="Behaviac\agent\agentstate.h" />
+    <ClInclude Include="Behaviac\agent\context.h" />
+    <ClInclude Include="Behaviac\agent\propertynode.h" />
+    <ClInclude Include="Behaviac\agent\registermacros.h" />
+    <ClInclude Include="Behaviac\agent\state.h" />
+    <ClInclude Include="Behaviac\behaviac.h" />
+    <ClInclude Include="Behaviac\behaviortree\attachments\attachaction.h" />
+    <ClInclude Include="Behaviac\behaviortree\attachments\effector.h" />
+    <ClInclude Include="Behaviac\behaviortree\attachments\event.h" />
+    <ClInclude Include="Behaviac\behaviortree\attachments\precondition.h" />
+    <ClInclude Include="Behaviac\behaviortree\behaviortree.h" />
+    <ClInclude Include="Behaviac\behaviortree\behaviortree_task.h" />
+    <ClInclude Include="Behaviac\behaviortree\generator.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\action.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\assignment.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\compute.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\end.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\noop.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\wait.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\waitforsignal.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\actions\waitframes.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\compositestochastic.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\ifelse.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\parallel.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\referencebehavior.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\selector.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\selectorloop.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\selectorprobability.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\selectorstochastic.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\sequence.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\sequencestochastic.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\composites\withprecondition.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\conditions\and.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\conditions\condition.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\conditions\conditionbase.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\conditions\false.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\conditions\or.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\conditions\true.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratoralwaysfailure.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratoralwaysrunning.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratoralwayssuccess.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorcount.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorcountlimit.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorfailureuntil.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorframes.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratoriterator.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorlog.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorloop.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorloopuntil.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratornot.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorrepeat.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorsuccessuntil.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratortime.h" />
+    <ClInclude Include="Behaviac\behaviortree\nodes\decorators\decoratorweight.h" />
+    <ClInclude Include="Behaviac\behaviortree\propertymember.h" />
+    <ClInclude Include="Behaviac\common\assert.h" />
+    <ClInclude Include="Behaviac\common\base.h" />
+    <ClInclude Include="Behaviac\common\basictypes.h" />
+    <ClInclude Include="Behaviac\common\config.h" />
+    <ClInclude Include="Behaviac\common\container\fixed_buffer.h" />
+    <ClInclude Include="Behaviac\common\container\fixed_hash.h" />
+    <ClInclude Include="Behaviac\common\container\hash_exmemory.h" />
+    <ClInclude Include="Behaviac\common\container\list.h" />
+    <ClInclude Include="Behaviac\common\container\map.h" />
+    <ClInclude Include="Behaviac\common\container\set.h" />
+    <ClInclude Include="Behaviac\common\container\spscqueue.h" />
+    <ClInclude Include="Behaviac\common\container\string.h" />
+    <ClInclude Include="Behaviac\common\container\vector.h" />
+    <ClInclude Include="Behaviac\common\convertutf.h" />
+    <ClInclude Include="Behaviac\common\crc.h" />
+    <ClInclude Include="Behaviac\common\defines.h" />
+    <ClInclude Include="Behaviac\common\factory.h" />
+    <ClInclude Include="Behaviac\common\file\file.h" />
+    <ClInclude Include="Behaviac\common\file\filemanager.h" />
+    <ClInclude Include="Behaviac\common\file\filesystem.h" />
+    <ClInclude Include="Behaviac\common\file\listfiles.h" />
+    <ClInclude Include="Behaviac\common\logger\logger.h" />
+    <ClInclude Include="Behaviac\common\logger\logmanager.h" />
+    <ClInclude Include="Behaviac\common\member.h" />
+    <ClInclude Include="Behaviac\common\memory\memory.h" />
+    <ClInclude Include="Behaviac\common\memory\objectpool.h" />
+    <ClInclude Include="Behaviac\common\memory\stl_allocator.h" />
+    <ClInclude Include="Behaviac\common\meta.h" />
+    <ClInclude Include="Behaviac\common\meta\hasfunction.h" />
+    <ClInclude Include="Behaviac\common\meta\ifthenelse.h" />
+    <ClInclude Include="Behaviac\common\meta\isenum.h" />
+    <ClInclude Include="Behaviac\common\meta\isfunction.h" />
+    <ClInclude Include="Behaviac\common\meta\isfundamental.h" />
+    <ClInclude Include="Behaviac\common\meta\ismap.h" />
+    <ClInclude Include="Behaviac\common\meta\isstruct.h" />
+    <ClInclude Include="Behaviac\common\meta\isvector.h" />
+    <ClInclude Include="Behaviac\common\meta\meta.h" />
+    <ClInclude Include="Behaviac\common\meta\metabase.h" />
+    <ClInclude Include="Behaviac\common\meta\metatypes.h" />
+    <ClInclude Include="Behaviac\common\meta\pointertype.h" />
+    <ClInclude Include="Behaviac\common\meta\reftype.h" />
+    <ClInclude Include="Behaviac\common\meta\removeall.h" />
+    <ClInclude Include="Behaviac\common\meta\removeconst.h" />
+    <ClInclude Include="Behaviac\common\meta\removeptr.h" />
+    <ClInclude Include="Behaviac\common\meta\removeref.h" />
+    <ClInclude Include="Behaviac\common\msc_stdint.h" />
+    <ClInclude Include="Behaviac\common\object\member.h" />
+    <ClInclude Include="Behaviac\common\object\tagobject.h" />
+    <ClInclude Include="Behaviac\common\operation.h" />
+    <ClInclude Include="Behaviac\common\profiler\profiler.h" />
+    <ClInclude Include="Behaviac\common\randomgenerator\randomgenerator.h" />
+    <ClInclude Include="Behaviac\common\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="Behaviac\common\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="Behaviac\common\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="Behaviac\common\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="Behaviac\common\rttibase.h" />
+    <ClInclude Include="Behaviac\common\serialization\ionode.h" />
+    <ClInclude Include="Behaviac\common\serialization\textnode.h" />
+    <ClInclude Include="Behaviac\common\smartptr.h" />
+    <ClInclude Include="Behaviac\common\socket\socketconnect.h" />
+    <ClInclude Include="Behaviac\common\socket\socketconnect_base.h" />
+    <ClInclude Include="Behaviac\common\staticassert.h" />
+    <ClInclude Include="Behaviac\common\string\fromstring.h" />
+    <ClInclude Include="Behaviac\common\string\stringcrc.h" />
+    <ClInclude Include="Behaviac\common\string\stringutils.h" />
+    <ClInclude Include="Behaviac\common\string\tostring.h" />
+    <ClInclude Include="Behaviac\common\swapbyte.h" />
+    <ClInclude Include="Behaviac\common\thread\mutex_lock.h" />
+    <ClInclude Include="Behaviac\common\thread\thread.h" />
+    <ClInclude Include="Behaviac\common\thread\wrapper.h" />
+    <ClInclude Include="Behaviac\common\workspace.h" />
+    <ClInclude Include="Behaviac\common\xml\ixml.h" />
+    <ClInclude Include="Behaviac\common\xml\xml.h" />
+    <ClInclude Include="Behaviac\common\xml\xmlanalyzer.h" />
+    <ClInclude Include="Behaviac\common\_config.h" />
+    <ClInclude Include="Behaviac\fsm\alwaystransition.h" />
+    <ClInclude Include="Behaviac\fsm\fsm.h" />
+    <ClInclude Include="Behaviac\fsm\startcondition.h" />
+    <ClInclude Include="Behaviac\fsm\state.h" />
+    <ClInclude Include="Behaviac\fsm\transitioncondition.h" />
+    <ClInclude Include="Behaviac\fsm\waitframesstate.h" />
+    <ClInclude Include="Behaviac\fsm\waitstate.h" />
+    <ClInclude Include="Behaviac\fsm\waittransition.h" />
+    <ClInclude Include="Behaviac\htn\method.h" />
+    <ClInclude Include="Behaviac\htn\planner.h" />
+    <ClInclude Include="Behaviac\htn\plannertask.h" />
+    <ClInclude Include="Behaviac\htn\task.h" />
+    <ClInclude Include="Behaviac\network\network.h" />
+    <ClInclude Include="Behaviac\property\properties.h" />
+    <ClInclude Include="Behaviac\property\property.h" />
+    <ClInclude Include="Behaviac\property\vector_ext.h" />
+    <ClInclude Include="behaviac_generated\types\behaviac_types.h" />
+    <ClInclude Include="behaviac_generated\types\internal\behaviac_agent_headers.h" />
+    <ClInclude Include="behaviac_generated\types\internal\behaviac_agent_member_visitor.h" />
+    <ClInclude Include="behaviac_generated\types\internal\behaviac_agent_meta.h" />
+    <ClInclude Include="behaviac_generated\types\internal\behaviac_headers.h" />
+    <ClInclude Include="behaviac_generated\types\internal\FirstAgent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Behaviac\agent\agent.inl" />
+    <None Include="Behaviac\agent\context.inl" />
+    <None Include="Behaviac\property\operators.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Behaviac\agent\agent.cpp" />
+    <ClCompile Include="Behaviac\agent\context.cpp" />
+    <ClCompile Include="Behaviac\agent\namedevent.cpp" />
+    <ClCompile Include="Behaviac\agent\propertynode.cpp" />
+    <ClCompile Include="Behaviac\agent\state_t.cpp" />
+    <ClCompile Include="Behaviac\agent\taskmethod.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\attachments\attachaction.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\attachments\Effector.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\attachments\event.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\attachments\Precondition.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\behaviortree.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\behaviortree_task.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\action.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\assignment.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\compute.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\end.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\noop.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\wait.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\waitforsignal.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\actions\waitframes.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\compositestochastic.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\ifelse.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\parallel.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\referencebehavior.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\selector.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\selectorloop.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\selectorprobability.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\selectorstochastic.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\sequence.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\sequencestochastic.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\composites\withprecondition.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\conditions\and.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\conditions\condition.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\conditions\conditionbase.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\conditions\false.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\conditions\or.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\conditions\true.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratoralwaysfailure.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratoralwaysrunning.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratoralwayssuccess.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorcount.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorcountlimit.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorfailureuntil.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorframes.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratoriterator.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorlog.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorloop.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorloopuntil.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratornot.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorrepeat.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorsuccessuntil.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratortime.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\nodes\decorators\decoratorweight.cpp" />
+    <ClCompile Include="Behaviac\behaviortree\registernodes.cpp" />
+    <ClCompile Include="Behaviac\common\assert.cpp" />
+    <ClCompile Include="Behaviac\common\base.cpp" />
+    <ClCompile Include="Behaviac\common\convertutf.cpp" />
+    <ClCompile Include="Behaviac\common\crc.cpp" />
+    <ClCompile Include="Behaviac\common\factory.cpp" />
+    <ClCompile Include="Behaviac\common\file\file.cpp" />
+    <ClCompile Include="Behaviac\common\file\filemanager.cpp" />
+    <ClCompile Include="Behaviac\common\file\filesystem_gcc.cpp" />
+    <ClCompile Include="Behaviac\common\file\filesystem_vcc.cpp" />
+    <ClCompile Include="Behaviac\common\file\listfiles.cpp" />
+    <ClCompile Include="Behaviac\common\logger\logger.cpp" />
+    <ClCompile Include="Behaviac\common\logger\logmanager.cpp" />
+    <ClCompile Include="Behaviac\common\memory\memory.cpp" />
+    <ClCompile Include="Behaviac\common\meta.cpp" />
+    <ClCompile Include="Behaviac\common\object\tagobject.cpp" />
+    <ClCompile Include="Behaviac\common\operation.cpp" />
+    <ClCompile Include="Behaviac\common\profiler\profiler.cpp" />
+    <ClCompile Include="Behaviac\common\randomgenerator\randomgenerator.cpp" />
+    <ClCompile Include="Behaviac\common\rttibase.cpp" />
+    <ClCompile Include="Behaviac\common\serialization\textnode.cpp" />
+    <ClCompile Include="Behaviac\common\socket\defaultsocketwrapper_gcc.cpp" />
+    <ClCompile Include="Behaviac\common\socket\defaultsocketwrapper_vcc.cpp" />
+    <ClCompile Include="Behaviac\common\socket\socketconnect.cpp" />
+    <ClCompile Include="Behaviac\common\socket\socketconnect_base.cpp" />
+    <ClCompile Include="Behaviac\common\string\stringcrc.cpp" />
+    <ClCompile Include="Behaviac\common\string\stringutils.cpp" />
+    <ClCompile Include="Behaviac\common\system_gcc.cpp" />
+    <ClCompile Include="Behaviac\common\system_vcc.cpp" />
+    <ClCompile Include="Behaviac\common\thread\mutex_gcc.cpp" />
+    <ClCompile Include="Behaviac\common\thread\mutex_vcc.cpp" />
+    <ClCompile Include="Behaviac\common\thread\wrapper.cpp" />
+    <ClCompile Include="Behaviac\common\thread\wrapper_gcc.cpp" />
+    <ClCompile Include="Behaviac\common\thread\wrapper_vcc.cpp" />
+    <ClCompile Include="Behaviac\common\workspace.cpp" />
+    <ClCompile Include="Behaviac\common\xml\xml.cpp" />
+    <ClCompile Include="Behaviac\common\xml\xmlanalyzer.cpp" />
+    <ClCompile Include="Behaviac\fsm\alwaystransition.cpp" />
+    <ClCompile Include="Behaviac\fsm\fsm.cpp" />
+    <ClCompile Include="Behaviac\fsm\fsmstate.cpp" />
+    <ClCompile Include="Behaviac\fsm\startcondition.cpp" />
+    <ClCompile Include="Behaviac\fsm\transitioncondition.cpp" />
+    <ClCompile Include="Behaviac\fsm\waitframesstate.cpp" />
+    <ClCompile Include="Behaviac\fsm\waitstate.cpp" />
+    <ClCompile Include="Behaviac\fsm\waittransition.cpp" />
+    <ClCompile Include="Behaviac\htn\agentproperties.cpp" />
+    <ClCompile Include="Behaviac\htn\agentstate.cpp" />
+    <ClCompile Include="Behaviac\htn\htnmethod.cpp" />
+    <ClCompile Include="Behaviac\htn\planner.cpp" />
+    <ClCompile Include="Behaviac\htn\plannertask.cpp" />
+    <ClCompile Include="Behaviac\htn\task.cpp" />
+    <ClCompile Include="Behaviac\network\network.cpp" />
+    <ClCompile Include="Behaviac\property\properties.cpp" />
+    <ClCompile Include="Behaviac\property\property.cpp" />
+    <ClCompile Include="behaviac_generated\types\internal\behaviac_agent_meta.cpp" />
+    <ClCompile Include="behaviac_generated\types\internal\FirstAgent.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Behaviac\common\rapidxml\license.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FE7B5205-3F71-427A-A5D7-57B130A015B6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BehaviorTree</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\Game\AI\BehaviorTree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\Game\AI\BehaviorTree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>E:\Game\AI\BehaviorTree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>E:\Game\AI\BehaviorTree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
